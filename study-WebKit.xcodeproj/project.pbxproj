@@ -11,6 +11,7 @@
 		B72A1F5C28C64856009B44A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72A1F5B28C64856009B44A0 /* ContentView.swift */; };
 		B72A1F5E28C64858009B44A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B72A1F5D28C64858009B44A0 /* Assets.xcassets */; };
 		B72A1F6128C64858009B44A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B72A1F6028C64858009B44A0 /* Preview Assets.xcassets */; };
+		B72A1F6C28C649C6009B44A0 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72A1F6B28C649C6009B44A0 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		B72A1F5B28C64856009B44A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B72A1F5D28C64858009B44A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B72A1F6028C64858009B44A0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B72A1F6B28C649C6009B44A0 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		B72A1F6D28C64B72009B44A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +54,9 @@
 		B72A1F5828C64856009B44A0 /* study-WebKit */ = {
 			isa = PBXGroup;
 			children = (
-				B72A1F5928C64856009B44A0 /* study_WebKitApp.swift */,
-				B72A1F5B28C64856009B44A0 /* ContentView.swift */,
-				B72A1F5D28C64858009B44A0 /* Assets.xcassets */,
-				B72A1F5F28C64858009B44A0 /* Preview Content */,
+				B72A1F6928C64976009B44A0 /* System */,
+				B72A1F6828C64962009B44A0 /* UI */,
+				B72A1F6728C648D4009B44A0 /* Resources */,
 			);
 			path = "study-WebKit";
 			sourceTree = "<group>";
@@ -65,6 +67,41 @@
 				B72A1F6028C64858009B44A0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B72A1F6728C648D4009B44A0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B72A1F6D28C64B72009B44A0 /* Info.plist */,
+				B72A1F5D28C64858009B44A0 /* Assets.xcassets */,
+				B72A1F5F28C64858009B44A0 /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B72A1F6828C64962009B44A0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B72A1F6A28C64997009B44A0 /* Components */,
+				B72A1F5B28C64856009B44A0 /* ContentView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B72A1F6928C64976009B44A0 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				B72A1F5928C64856009B44A0 /* study_WebKitApp.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		B72A1F6A28C64997009B44A0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B72A1F6B28C649C6009B44A0 /* WebView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B72A1F6C28C649C6009B44A0 /* WebView.swift in Sources */,
 				B72A1F5C28C64856009B44A0 /* ContentView.swift in Sources */,
 				B72A1F5A28C64856009B44A0 /* study_WebKitApp.swift in Sources */,
 			);
@@ -266,10 +304,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"study-WebKit/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"study-WebKit/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 6VYPR8MZ57;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "study-WebKit/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -295,10 +334,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"study-WebKit/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"study-WebKit/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 6VYPR8MZ57;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "study-WebKit/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
